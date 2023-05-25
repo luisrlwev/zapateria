@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat:300,400,500,600,700|Merriweather:300,400,300i,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+	<!-- shop Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="demos/shop/shop.css" type="text/css" />
+	<link rel="stylesheet" href="demos/shop/css/fonts.css" type="text/css" />
+	<!-- / -->
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="css/colors.php?color=000000" type="text/css" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Zapatería</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<div class="modal-on-load" data-target="#myModal1"></div>
+
+		<!-- On LOad Modal PopUp-->
+		<div class="modal1 mfp-hide subscribe-widget mx-auto" id="myModal1" style="max-width: 750px;">
+			<div class="row justify-content-center bg-white align-items-center" style="min-height: 380px;">
+				<div class="col-md-5 p-0">
+					<div style="background: url('images/zapatos/d0b05dea-7ef2-4b54-82d5-09133f63482a-500x500.jpg') no-repeat center right; background-size: cover;  min-height: 380px;"></div>
+				</div>
+				<div class="col-md-7 bg-white p-4">
+					<div class="heading-block border-bottom-0 mb-3">
+						<h3 class="font-secondary nott ">Únete a nuestro Newsletter &amp; obten un <span class="text-danger">40%</span> de descuento en tu primer compra</h3>
+					</div>
+					<div class="widget-subscribe-form-result"></div>
+					<form class="widget-subscribe-form2 mb-2" action="include/subscribe.php" method="post">
+						<input type="email" id="widget-subscribe-form2-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Ingresa tu e-mail">
+						<div class="d-flex justify-content-between align-items-center mt-1">
+							<button class="button button-dark  bg-dark text-white ml-0" type="submit">Suscribirse</button>
+							<a href="#" class="btn-link" onClick="$.magnificPopup.close();return false;">No gracias</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Top Bar
+		============================================= -->
+		<div id="top-bar" class="dark" style="background-color: #a3a5a7;">
+			<div class="container">
+
+				<div class="row justify-content-between align-items-center">
+
+					<div class="col-12 col-lg-auto">
+						<p class="mb-0 d-flex justify-content-center justify-content-lg-start py-3 py-lg-0"><strong>Envíos gratis a toda la república mexicana.</strong></p>
+					</div>
+
+					<div class="col-12 col-lg-auto d-none d-lg-flex">
+
+						<!-- Top Links
+						============================================= -->
+						<div class="top-links">
+							<ul class="top-links-container">
+								<li class="top-links-item"><a href="#">ES</a>
+									<ul class="top-links-sub-menu">
+										<li class="top-links-item"><a href="#"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+										<li class="top-links-item"><a href="#"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+										<li class="top-links-item"><a href="#"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- .top-links end -->
+
+						<!-- Top Social
+						============================================= -->
+						<ul id="top-social">
+							<li><a href="#" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+							<li><a href="#" class="si-instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
+							<li><a href="tel:+52 123 456 7890" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+521234567890</span></a></li>
+							<li><a href="mailto:info@canvas.com" class="si-email3"><span class="ts-icon"><i class="icon-envelope-alt"></i></span><span class="ts-text">info@zapateria.com</span></a></li>
+						</ul><!-- #top-social end -->
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header header-size-md">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row justify-content-lg-between">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="mr-lg-4">
+							<a href="#" class="standard-logo">Zapatería</a>
+							<a href="#" class="retina-logo">Zapatería</a>
+						</div><!-- #logo end -->
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu with-arrows mr-lg-auto">
+
+							<ul class="menu-container">
+								<li class="menu-item current"><a class="menu-link" href="#"><div>Inicio</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="#calzado"><div>Calzado</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="#accesorios"><div>Accesorios</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="#ofertas"><div>Ofertas</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="#contacto"><div>Contacto</div></a></li>
+							</ul>
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element swiper_wrapper" data-autoplay="6000" data-speed="800" data-loop="true" data-grab="true" data-effect="fade" data-arrow="false" style="height: 600px;">
+
+			<div class="swiper-container swiper-parent">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide dark">
+						<div class="container">
+							<div class="slider-caption slider-caption-center">
+								<div>
+									<div class="h5 mb-2 font-secondary">Zapatos de caballero</div>
+									<h2 class="bottommargin-sm text-white">Venta al mayoreo</h2>
+									<a href="#" class="button bg-white text-dark button-light">Ver calzado</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide-bg" style="background-image: url('images/zapatos/slider.jpg');"></div>
+					</div>
+					<div class="swiper-slide dark">
+						<div class="container">
+							<div class="slider-caption slider-caption-center">
+								<div>
+									<div class="h5 mb-2 font-secondary">Zapatería</div>
+									<h2 class="bottommargin-sm text-white">Ofertas de hatas 40% de descuento</h2>
+									<a href="#" class="button bg-white text-dark button-light">Ver calzado</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide-bg" style="background-image: url('images/zapatos/slider-2.jpg'); background-position: center 20%;"></div>
+					</div>
+					<div class="swiper-slide dark">
+						<div class="container">
+							<div class="slider-caption slider-caption-center">
+								<div>
+									<h2 class="bottommargin-sm text-white">Nueva temporada 2020</h2>
+									<a href="#" class="button bg-white text-dark button-light">Ver calzado</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide-bg" style="background-image: url('images/zapatos/slider-3.jpg'); background-position: center 40%;"></div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+		</section><!-- #Slider End -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<!-- Shop Categories
+					============================================= -->
+					<div class="fancy-title title-border title-center mb-4">
+						<h4>Categorias</h4>
+					</div>
+
+					<div class="row shop-categories clearfix">
+						<div class="col-lg-7">
+							<a href="#" style="background: url('images/zapatos/zapatos-hombre.jpg') no-repeat right center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block m-0 border-0">
+										<h3 class="nott font-weight-semibold ls0">Caballero/Joven</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-5">
+							<a href="#" style="background: url('images/zapatos/zapatos-mujer.jpg') no-repeat center right; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block m-0 border-0">
+										<h3 class="nott font-weight-semibold ls0">Dama</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-lg-4">
+							<a href="#" style="background: url('images/zapatos/muchos-zapatos.jpg') no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block m-0 border-0">
+										<h3 class="nott font-weight-semibold ls0">Productos populares</h3>
+										<small class="button bg-white text-dark button-light button-mini">Ver ahora</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4">
+							<a href="#" style="background: url('images/zapatos/zapatos-nino.jpg') no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block m-0 border-0">
+										<h3 class="nott font-weight-semibold ls0">Niños</h3>
+										<small class="button bg-white text-dark button-light button-mini">Ver ahora</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4">
+							<a href="#" style="background: url('images/zapatos/zapatos-hombre-2.jpg') no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block m-0 border-0">
+										<h3 class="nott font-weight-semibold ls0">Promociones</h3>
+										<small class="button bg-white text-dark button-light button-mini">Ver ahora</small>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<!-- Featured Carousel
+					============================================= -->
+					<div class="fancy-title title-border mt-4 title-center">
+						<h4>Calzado</h4>
+					</div>
+
+					<div id="oc-products" class="owl-carousel products-carousel carousel-widget" data-margin="20" data-loop="true" data-autoplay="5000" data-nav="true" data-pagi="false" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-lg="4" data-items-xl="5">
+
+						<!-- Shop Item 1
+						============================================= -->
+						<div class="oc-item">
+							<div class="product">
+								<div class="product-image">
+									<a href="#"><img src="images/zapatos/32-ANGAR-F021007804-VINO-500x500.jpg" alt="Round Neck T-shirts"></a>
+									<a href="#"><img src="images/zapatos/32-ANGAR-F021007804-VINO-500x500.jpg" alt="Round Neck T-shirts"></a>
+									<div class="bg-overlay">
+										<div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+										</div>
+										<div class="bg-overlay-bg bg-transparent"></div>
+									</div>
+								</div>
+								<div class="product-desc">
+									<div class="product-title mb-1"><h3><a href="#">Zapatos</a></h3></div>
+									<div class="product-price font-primary"><ins>$19.99</ins></div>
+									<div class="product-rating">
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star-half-full"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Shop Item 2
+						============================================= -->
+						<div class="oc-item">
+							<div class="product">
+								<div class="product-image">
+									<a href="#"><img src="images/zapatos/zapatos-mujer-5.jpg" alt="Navy Blue Dress"></a>
+									<a href="#"><img src="images/zapatos/zapatos-mujer-5.jpg" alt="Navy Blue Dress"></a>
+									<div class="bg-overlay">
+										<div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+										</div>
+										<div class="bg-overlay-bg bg-transparent"></div>
+									</div>
+								</div>
+								<div class="product-desc">
+									<div class="product-title mb-1"><h3><a href="#">Zapatos de mujer</a></h3></div>
+									<div class="product-price font-primary"><ins>$19.99</ins></div>
+									<div class="product-rating">
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star-half-full"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Shop Item 3
+						============================================= -->
+						<div class="oc-item">
+							<div class="product">
+								<div class="product-image">
+									<a href="#"><img src="images/zapatos/zapatos-nino--3.jpg" alt="Navy Blue Dress"></a>
+									<a href="#"><img src="images/zapatos/zapatos-nino--3.jpg" alt="Navy Blue Dress"></a>
+									<div class="bg-overlay">
+										<div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+										</div>
+										<div class="bg-overlay-bg bg-transparent"></div>
+									</div>
+								</div>
+								<div class="product-desc">
+									<div class="product-title mb-1"><h3><a href="#">Zapatos de niño</a></h3></div>
+									<div class="product-price font-primary"><ins>$19.99</ins></div>
+									<div class="product-rating">
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star-half-full"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Shop Item 4
+						============================================= -->
+						<div class="oc-item">
+							<div class="product">
+								<div class="product-image">
+									<a href="#"><img src="images/zapatos/d0b05dea-7ef2-4b54-82d5-09133f63482a-500x500.jpg" alt="Navy Blue Dress"></a>
+									<a href="#"><img src="images/zapatos/d0b05dea-7ef2-4b54-82d5-09133f63482a-500x500.jpg" alt="Navy Blue Dress"></a>
+									<div class="bg-overlay">
+										<div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+										</div>
+										<div class="bg-overlay-bg bg-transparent"></div>
+									</div>
+								</div>
+								<div class="product-desc">
+									<div class="product-title mb-1"><h3><a href="#">Zapatos de caballero</a></h3></div>
+									<div class="product-price font-primary"><ins>$19.99</ins></div>
+									<div class="product-rating">
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star-half-full"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Shop Item 5
+						============================================= -->
+						<div class="oc-item">
+							<div class="product">
+								<div class="product-image">
+									<a href="#"><img src="images/zapatos/zapatos-mujer-4.jpg" alt="Navy Blue Dress"></a>
+									<a href="#"><img src="images/zapatos/zapatos-mujer-4.jpg" alt="Navy Blue Dress"></a>
+									<div class="bg-overlay">
+										<div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+										</div>
+										<div class="bg-overlay-bg bg-transparent"></div>
+									</div>
+								</div>
+								<div class="product-desc">
+									<div class="product-title mb-1"><h3><a href="#">Zapatos de mujer</a></h3></div>
+									<div class="product-price font-primary"><ins>$19.99</ins></div>
+									<div class="product-rating">
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star3"></i>
+										<i class="icon-star-half-full"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<!-- New Arrival Section
+				============================================= -->
+				<div class="section my-4">
+					<div class="container">
+						<div class="row align-items-stretch">
+							<div class="col-md-5">
+								<div class="row">
+									<div class="col-md-12 center p-5">
+										<div class="heading-block mb-1 border-bottom-0 mx-auto">
+											<div class="font-secondary text-black-50 mb-1">Nueva colección</div>
+											<h3 class="nott ls0">Nueva temporada 2020</h3>
+											<p class="font-weight-normal mt-2 mb-3 text-muted" style="font-size: 17px; line-height: 1.4">Los zapatos de mejor calidad en todo México</p>
+											<a href="#" class="button bg-dark text-white button-dark button-small ml-0">Comprar ahora</a>
+										</div>
+									</div>
+									<div class="col-6">
+										<a href="images/zapatos/15-500x500.jpg" data-lightbox="image"><img src="images/zapatos/15-500x500.jpg" alt="Image"></a>
+									</div>
+									<div class="col-6">
+										<a href="images/zapatos/14238-221-500x500.jpg" data-lightbox="image"><img src="images/zapatos/14238-221-500x500.jpg" alt="Image"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7 min-vh-50">
+								<a href="#" data-lightbox="iframe" class="d-block position-relative h-100" style="background: url('images/zapatos/zapato.jpg') center center no-repeat; background-size: cover;">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+				<!-- Sign Up
+				============================================= -->
+				<div class="section my-4 py-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row align-items-stretch align-items-center">
+									<div class="col-md-7 min-vh-50" style="background: url('images/zapatos/zapatos-mujer-2.jpg') center center no-repeat; background-size: cover;">
+										<div class="vertical-middle pl-5">
+											<h2 class="pl-5"><strong>40%</strong> de descuento<br> al comprar 100 pares</h2>
+										</div>
+									</div>
+									<div class="col-md-5 bg-white">
+										<div class="card border-0 py-2">
+											<div class="card-body">
+												<h3 class="card-title mb-4 ls0">Contáctanos para obtener el descuento.</h3>
+												<ul class="iconlist ml-3">
+													<li><i class="icon-circle-blank text-black-50"></i> Calidad</li>
+													<li><i class="icon-circle-blank text-black-50"></i> Precio</li>
+													<li><i class="icon-circle-blank text-black-50"></i> Servicio</li>
+												</ul>
+												<a href="#" class="button button-rounded ls0 font-weight-semibold ml-0 mb-2 nott px-4">Contactar</a><br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+
+
+					<!-- Brands
+					============================================= -->
+					<div class="row mt-5">
+						<div class="col-12">
+							<div class="fancy-title title-border title-center mb-4">
+								<h4>Nuestros clientes</h4>
+							</div>
+
+							<ul class="clients-grid grid-2 grid-sm-3 grid-md-6 grid-lg-6 mb-0">
+								<li class="grid-item"><a href="#"><img src="images/zapatos/3 hermanos.png" alt="Clients"></a></li>
+								<li class="grid-item"><a href="#"><img src="images/zapatos/andrea.png" alt="Clients"></a></li>
+								<li class="grid-item"><a href="#"><img src="images/zapatos/calzalia.png" alt="Clients"></a></li>
+								<li class="grid-item"><a href="#"><img src="images/zapatos/cklass.png" alt="Clients"></a></li>
+								<li class="grid-item"><a href="#"><img src="images/zapatos/cuadra.png" alt="Clients"></a></li>
+								<li class="grid-item"><a href="#"><img src="images/zapatos/leon.png" alt="Clients"></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
+			<div class="container clearfix">
+				<h1>Contáctanos</h1>
+				<span>Envíanos un mensaje</span>
+			</div>
+
+		</section><!-- #page-title end -->
+
+		<!-- Google Map
+		============================================= -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.279752033794!2d-103.38052868494485!3d20.698861604333988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4816d396ab%3A0xab57ff87cb605139!2sCalle%20Bogota%2C%20Providencia%2C%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1600180207195!5m2!1ses-419!2smx" width="1920" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container">
+
+					<div class="row gutter-40 col-mb-80">
+						<!-- Postcontent
+						============================================= -->
+						<div class="postcontent col-lg-9">
+
+							<h3>Envianos un E-mail</h3>
+
+							<div class="form-widget">
+
+								<div class="form-result"></div>
+
+								<form class="mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+
+									<div class="form-process">
+										<div class="css3-spinner">
+											<div class="css3-spinner-scaler"></div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6 form-group">
+											<label for="template-contactform-name">Nombre <small>*</small></label>
+											<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+										</div>
+
+										<div class="col-md-6 form-group">
+											<label for="template-contactform-email">E-mail <small>*</small></label>
+											<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+										</div>
+
+										<div class="col-md-6 form-group">
+											<label for="template-contactform-phone">Teléfono</label>
+											<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
+										</div>
+
+										<div class="col-md-6 form-group">
+											<label for="template-contactform-subject">Asunto <small>*</small></label>
+											<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control" />
+										</div>
+
+										<div class="w-100"></div>
+
+										<div class="col-12 form-group">
+											<label for="template-contactform-message">Mensaje <small>*</small></label>
+											<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+										</div>
+
+										<div class="col-12 form-group d-none">
+											<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+										</div>
+
+										<div class="col-12 form-group">
+											<button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Enviar mensaje</button>
+										</div>
+									</div>
+
+									<input type="hidden" name="prefix" value="template-contactform-">
+
+								</form>
+							</div>
+
+						</div><!-- .postcontent end -->
+
+						<!-- Sidebar
+						============================================= -->
+						<div class="sidebar col-lg-3">
+
+							<address>
+								<strong>Dirección:</strong><br>
+								México<br>
+							</address>
+							<abbr title="Phone Number"><strong>Teléfono:</strong></abbr> +52 123 456 7890<br>
+							<abbr title="Email Address"><strong>Email:</strong></abbr> info@zapateria.com
+
+							<div class="widget border-0 pt-0">
+
+								<a href="#" class="social-icon si-small si-dark si-facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-dark si-instagram">
+									<i class="icon-instagram"></i>
+									<i class="icon-instagram"></i>
+								</a>
+
+							</div>
+
+						</div><!-- .sidebar end -->
+					</div>
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="bg-transparent border-0">
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bg-transparent">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							Copyrights &copy; 2020 Todos los derechos reservados | Zapaterías<br>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-line-arrow-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<!-- ADD-ONS JS FILES -->
+	<script>
+
+	</script>
+
+</body>
+</html>
